@@ -48,10 +48,11 @@ Table of contents
   --green: #2ebb79;
   --crusoe-green: #d39121;
   --yellow: #ffea23;
-  --dark-gray: #232323;
+  --dark-gray: #161919;
   --medium-gray: #717580;
   --extra-medium-gray: #e4e4e4;
   --light-gray: #a8a8a8;
+  --light-blue:#E6F2F6;
   --very-light-gray: #f7f7f7;
   --light-medium-gray: #eaeaeb;
   --charcoal-blue: #202329;
@@ -77,6 +78,7 @@ Table of contents
   --camarone: #20642b;
   --seal-brown: #0e0708;
   --Wasabi: #8ea63a;
+  --primary-blue: #0078A7;
 }
 /* ===================================
     03. Reset
@@ -3198,6 +3200,10 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 .bg-dark-gray,
 .bg-dark-gray:focus {
   background-color: var(--dark-gray);
+}
+.bg-light-blue,
+.bg-light-blue:focus {
+  background-color: var(--light-blue);
 }
 .bg-black {
   background-color: var(--black);
@@ -6836,7 +6842,7 @@ header .container-fluid {
   padding-right: 45px;
 }
 header.sticky .navbar-brand {
-  padding: 20px 0;
+  padding: 11px 0;
 }
 header.sticky .navbar {
   -webkit-transform: translateY(-100%);
@@ -6933,6 +6939,7 @@ header.sticky.sticky-active [data-header-hover=light] {
 }
 header.sticky.sticky-active [data-header-hover=light] .navbar-nav .nav-link {
   color: var(--dark-gray);
+
 }
 header.sticky.sticky-active [data-header-hover=light] .icon > a {
   color: var(--dark-gray);
@@ -7123,10 +7130,14 @@ header.sticky .navbar.disable-fixed {
   display: none;
 }
 .navbar .navbar-nav .nav-item:hover .nav-link, .navbar .navbar-nav .nav-item.active .nav-link {
-  opacity: 0.6;
+  opacity: 1.0;
+  color: var(--primary-blue) !important;
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
-  opacity: 0.6;
+  opacity: 1.0;
+}
+.sticky-active .active {
+  border-bottom: 3px solid var(--primary-blue);
 }
 .navbar .navbar-nav .nav-link {
   font-size: 16px;
@@ -7138,7 +7149,7 @@ header.sticky .navbar.disable-fixed {
   word-break: normal;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: var(--white);
+  color: var(--dark-gray);
 }
 .navbar .navbar-nav .nav-link .label {
   display: inline-block;
@@ -9198,8 +9209,8 @@ button:focus {
   line-height: 22px;
 }
 .page-title-extra-small h1 {
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 28px;
 }
 .page-title-extra-small h2 {
   font-size: 3.8rem;

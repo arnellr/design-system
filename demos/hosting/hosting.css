@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 /* variable */
 :root {      
-    --alt-font: 'Inter', sans-serif;
-    --primary-font: 'Inter', sans-serif;
+    --alt-font: 'AvenirLTPro-Roman', sans-serif;
+    --primary-font: 'AvenirLTPro-Roman', sans-serif;
     --base-color: #152bca;
     --dark-gray: #181b31;
     --green: #0fc978;
@@ -35,7 +35,7 @@ body{
     font-size: 15px;
 }
 header .navbar-brand img {
-    max-height: 32px;
+    max-height: 42px;
 }
 .sticky .header-transparent .header-button .btn {
     background-color: var(--dark-gray);
@@ -45,7 +45,7 @@ header .navbar-brand img {
     border-color: var(--dark-gray);
 }
 .navbar .navbar-nav .nav-link {
-    font-size: 17px;
+    font-size: 14px;
 }
 /* bg background color */
 .bg-midnight-dark-blue {
